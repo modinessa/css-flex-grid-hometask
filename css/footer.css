@@ -29,3 +29,7 @@ footer {
     line-height: 22px;
     margin-top: 12px;
 }
+
+footer a:-webkit-any-link {
+    color: rgba(255, 255, 255, 0.4);
+}
