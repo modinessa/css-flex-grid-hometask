@@ -3,7 +3,7 @@
 .headline {
     background-color: #eeeeee;
     box-sizing: border-box;
-    padding: 90px 97px 50px 120px;
+    padding: 90px 143px 50px 150px;
 }
 
 .headline h1 {
@@ -12,6 +12,10 @@
 
 .headline h2 {
     color: #666666;
+}
+
+div.container p {
+    width: 410px;
 }
 
 .headline button {
