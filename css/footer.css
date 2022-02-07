@@ -2,18 +2,19 @@ footer {
     background-color: #464547;
     box-sizing: border-box;
     height: 199px;
-    padding: 37px 148px 75px 153px;
+    padding: 37px 140px 0 153px;
     width: 1200px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(7, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .grid-container * {
-    justify-self: start;
+    margin: 0;
+    padding: 0;
 }
 
 .project-logo {
@@ -21,30 +22,27 @@ footer {
     grid-column: 1/2;
     grid-row: 1/2;
     justify-content: start;
+    align-items: center;
+    display: flex;
 }
 
 .contacts {
     align-self: start;
+    justify-self: start;
     grid-column: 3/5;
     grid-row: 1/2;
 }
 
 .e-mail {
-    align-self: end;
+    align-self: start;
     grid-column: 3/5;
     grid-row: 2/3;
 }
 
 .copyright {
-    align-self: end;
+    justify-self: end;
     grid-column: 6/8;
     grid-row: 2/3;
-}
-
-.project-logo {
-    align-items: center;
-    display: flex;
-    padding-top: 19px;
 }
 
 .project-logo div {
@@ -53,8 +51,9 @@ footer {
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 0.2em;
-    margin-left: 16px;
+    padding-left: 16px;
 }
+
 
 .contacts,
 .copyright,
@@ -64,5 +63,4 @@ footer a:-webkit-any-link {
     font-style: normal;
     font-weight: normal;
     line-height: 22px;
-    margin-top: 12px;
 }
